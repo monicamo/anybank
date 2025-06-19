@@ -115,9 +115,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
           }
         }
+      },
+       "i18n": {
+        "sourceLocale": "pt"
       }
     }
   }
