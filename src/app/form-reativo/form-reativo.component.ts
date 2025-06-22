@@ -32,6 +32,10 @@ export class FormReativoComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
   });
 
+  // Cria um método que calcula o total de uma lista de produtos
+  calcularTotalProdutos(produtos: { preco: number; quantidade: number }[]): number {
+    return produtos.reduce((total, produto) => total + produto.preco * produto.quantidade, 0);
+  }
 
   enviarFormulario() {
     console.log('Dados enviados:', this.meuFormulario.value);

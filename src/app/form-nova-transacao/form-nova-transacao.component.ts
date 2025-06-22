@@ -12,6 +12,8 @@ export class FormNovaTransacaoComponent {
   tipoTransacao = '';
 
 
+
+
   onSubmit() {
     console.log('Transação enviada:', this.valorTransacao);
     console.log('Tipo de transação:', this.tipoTransacao);
